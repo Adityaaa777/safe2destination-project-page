@@ -12,11 +12,11 @@
 .safe-footer-projects { width:24.5139cqw; background:#6c36fe; }
 .safe-footer-actions img { display:block; max-width:none; }
 .safe-footer-links { position:absolute; top:31.0417cqw; left:0; display:flex; width:100%; align-items:center; justify-content:center; }
-.safe-footer-links span { display:flex; align-items:center; gap:.8333cqw; padding:0 2.0833cqw; font-size:1.3889cqw; line-height:1; white-space:nowrap; }
-.safe-footer-links span + span { border-left:1px solid #55535e; }
+.safe-footer-links span,.safe-footer-links a { display:flex; align-items:center; gap:.8333cqw; padding:0 2.0833cqw; color:inherit; font-size:1.3889cqw; line-height:1; text-decoration:none; white-space:nowrap; }
+.safe-footer-links :is(span,a) + :is(span,a) { border-left:1px solid #55535e; }
 .safe-footer-links img { display:block; max-width:none; }
 .safe-footer-copyright { position:absolute; right:0; bottom:0; left:0; display:grid; height:6.7361cqw; place-items:center; border-top:1px solid #27272a; color:#c2c2c2; font-size:1.1111cqw; }
-.safe-footer-projects:focus-visible { outline:max(2px,.1389cqw) solid #9a6cff; outline-offset:max(3px,.2083cqw); }
+.safe-footer-projects:focus-visible,.safe-footer-contact:focus-visible,.safe-footer-links a:focus-visible { outline:max(2px,.1389cqw) solid #9a6cff; outline-offset:max(3px,.2083cqw); }
 @media (max-width:700px) {
   .safe-section-09 { aspect-ratio:auto; min-height:620px; padding:76px 6% 102px; }
   .safe-footer-content { position:static; display:flex; flex-direction:column; align-items:center; }
@@ -28,7 +28,7 @@
   .safe-footer-actions { flex-wrap:wrap; gap:14px; margin-top:38px; }
   .safe-footer-actions>a,.safe-footer-actions>span { width:min(100%,330px); height:54px; border-radius:10px; font-size:17px; }
   .safe-footer-links { flex-wrap:wrap; gap:14px 0; margin-top:38px; }
-  .safe-footer-links span { padding:0 14px; font-size:14px; }
+  .safe-footer-links span,.safe-footer-links a { padding:0 14px; font-size:14px; }
   .safe-footer-links img { width:18px; height:18px; }
   .safe-footer-copyright { height:72px; font-size:13px; }
 }
