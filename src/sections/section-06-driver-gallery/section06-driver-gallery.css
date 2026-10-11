@@ -1,0 +1,72 @@
+.safe-section-06-preview {
+  min-height: 100vh;
+  background: #15151d;
+}
+
+.safe-section-06 {
+  container-type: inline-size;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1440 / 922;
+  overflow: hidden;
+  background: #15151d;
+}
+
+.safe-section-06-panel {
+  position: absolute;
+  top: 2.1692%;
+  left: 5.9722%;
+  width: 88.1944%;
+  height: 92.6247%;
+  overflow: hidden;
+  border-radius: 1.3889cqw;
+  background: #0b0b0f;
+}
+
+.safe-section-06-screen {
+  position: absolute;
+  overflow: hidden;
+  user-select: none;
+}
+
+.safe-section-06-screen img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+}
+
+@media (max-width: 700px) {
+  .safe-section-06 {
+    aspect-ratio: auto;
+    padding: 24px 0 24px 6%;
+  }
+
+  .safe-section-06-panel {
+    position: static;
+    display: flex;
+    width: 100%;
+    height: 522px;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-radius: 18px 0 0 18px;
+    padding: 16px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .safe-section-06-panel::-webkit-scrollbar { display: none; }
+
+  .safe-section-06-screen {
+    position: static;
+    width: auto !important;
+    height: min(100%, 490px) !important;
+    flex: none;
+    border-radius: 14px;
+    scroll-snap-align: start;
+  }
+}

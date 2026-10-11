@@ -1,0 +1,147 @@
+.safe-section-03-preview {
+  min-height: 100vh;
+  background: #15151d;
+}
+
+.safe-section-03 {
+  container-type: inline-size;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1440 / 560;
+  overflow: hidden;
+  background: #15151d;
+  color: #f7f7f8;
+}
+
+.safe-section-03 h1,
+.safe-section-03 h2,
+.safe-section-03 h3,
+.safe-section-03 p {
+  margin: 0;
+}
+
+.safe-section-03 > h1 {
+  position: absolute;
+  top: 13.8544%;
+  left: 5.8374%;
+  font-size: 2.0848cqw;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -.02em;
+}
+
+.safe-summary-introduction {
+  position: absolute;
+  top: 26.8206%;
+  left: 5.8374%;
+  width: 43.0855%;
+}
+
+.safe-section-03 h2,
+.safe-section-03 h3 {
+  color: #777780;
+  font-size: 1.2509cqw;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.safe-summary-copy {
+  margin-top: 1.529cqw;
+}
+
+.safe-summary-copy p {
+  font-size: 1.2509cqw;
+  font-weight: 500;
+  line-height: 1.58;
+  letter-spacing: -.011em;
+}
+
+.safe-summary-copy p + p {
+  margin-top: 2.1543cqw;
+}
+
+.safe-summary-metadata {
+  position: absolute;
+  top: 26.8206%;
+  left: 59.2773%;
+  display: flex;
+  flex-direction: column;
+  gap: 10.841cqw;
+}
+
+.safe-summary-type-list {
+  display: flex;
+  gap: .834cqw;
+  margin-top: 1.1814cqw;
+}
+
+.safe-summary-type-pill {
+  display: inline-flex;
+  min-height: 3.0577cqw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #282832;
+  padding: .695cqw 1.529cqw;
+  font-size: 1.1119cqw;
+  font-weight: 500;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .safe-section-03 {
+    display: grid;
+    gap: 32px;
+    aspect-ratio: auto;
+    padding: 44px 6% 64px;
+  }
+
+  .safe-section-03 > h1,
+  .safe-summary-introduction,
+  .safe-summary-metadata {
+    position: static;
+    width: auto;
+  }
+
+  .safe-section-03 > h1 {
+    font-size: clamp(26px, 6vw, 36px);
+  }
+
+  .safe-section-03 h2,
+  .safe-section-03 h3 {
+    font-size: 16px;
+  }
+
+  .safe-summary-copy {
+    margin-top: 16px;
+  }
+
+  .safe-summary-copy p {
+    font-size: 15px;
+  }
+
+  .safe-summary-copy p + p {
+    margin-top: 22px;
+  }
+
+  .safe-summary-desktop-break {
+    display: none;
+  }
+
+  .safe-summary-metadata {
+    gap: 32px;
+  }
+
+  .safe-summary-type-list {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .safe-summary-type-pill {
+    min-height: 42px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

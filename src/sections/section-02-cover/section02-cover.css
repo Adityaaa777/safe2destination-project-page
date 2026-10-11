@@ -1,0 +1,26 @@
+.safe-section-02-preview{min-height:100vh;background:#15151d}
+.safe-section-02{container-type:inline-size;position:relative;width:100%;aspect-ratio:1440/722;overflow:hidden;background:#ffa600;color:#242731}
+.safe-section-02-artwork{position:absolute;top:-5.625cqw;left:-14.7917cqw;display:block;width:106.6667cqw;height:auto;max-width:none;pointer-events:none}
+.safe-section-02-copy{position:absolute;z-index:2;top:8.4722cqw;left:5.2083cqw;width:48cqw}
+.safe-section-02-kicker{display:inline-flex;align-items:center;min-height:3.1944cqw;padding:0 1.3194cqw;border-radius:100px;background:#ffedd4;font-size:1.3889cqw;font-weight:500;letter-spacing:-.035em;white-space:nowrap}
+.safe-section-02-copy h1{margin:1.5278cqw 0 1.1111cqw;font-size:3.75cqw;font-weight:700;line-height:1.12;letter-spacing:-.035em;white-space:nowrap}
+.safe-section-02-copy p{margin:0;font-size:1.3889cqw;font-weight:500;line-height:1.6;letter-spacing:-.018em;white-space:nowrap}
+.safe-section-02-screens{position:absolute;inset:0;pointer-events:none}
+.safe-section-02-shot{position:absolute;display:block;height:auto;max-width:none}
+.safe-section-02-rider-frame>img:first-child{display:block;width:100%;height:auto}
+.safe-section-02-rider-screen{position:absolute;top:8.54%;left:12.93%;width:74.14%;height:83.08%;border-radius:8% 8% 3% 3%/3% 3% 1% 1%;object-fit:cover;object-position:center top}
+.safe-section-02-rider-screen:hover{transform:none}
+.safe-section-02-rider-notch{position:absolute;top:8.46%;left:29.72%;width:39.67%;height:2.9%;border-radius:0 0 35% 35%;background:#1b1b1d;pointer-events:none}
+@media(max-width:700px){
+  .safe-section-02{min-height:850px;aspect-ratio:auto}
+  .safe-section-02-artwork{top:250px;left:-250px;width:1050px}
+  .safe-section-02-copy{top:64px;left:6%;width:88%}
+  .safe-section-02-kicker{min-height:35px;padding:0 14px;font-size:15px}
+  .safe-section-02-copy h1{margin:18px 0 13px;font-size:clamp(32px,8vw,54px);white-space:normal}
+  .safe-section-02-copy p{font-size:15px;line-height:1.5;white-space:normal}
+  .safe-section-02-copy p br{display:none}
+  .safe-section-02-shot{display:none}
+  .safe-section-02-shot--mobile{display:block;top:508px!important;width:min(52%,225px)!important}
+  .safe-section-02-shot--mobile:nth-child(3){left:calc(5% - min(4.17vw,18px))!important}
+  .safe-section-02-shot--mobile:nth-child(4){left:auto!important;right:calc(5% - min(4.17vw,18px))}
+}
