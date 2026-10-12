@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import type { ImgHTMLAttributes, KeyboardEvent } from "react"
 import { createPortal } from "react-dom"
+import { LightboxZoomControls, useLightboxZoom } from "./LightboxZoom"
 import "./detail-image.css"
 
 type DetailImageProps = ImgHTMLAttributes<HTMLImageElement> & {
@@ -13,6 +14,7 @@ type DetailImageProps = ImgHTMLAttributes<HTMLImageElement> & {
 /** Opens an existing screen image at its original aspect ratio. */
 export function DetailImage({ alt, className = "", src, viewLabel, wide = false, ...imageProps }: DetailImageProps) {
   const [isOpen, setIsOpen] = useState(false)
+  const zoom = useLightboxZoom(isOpen)
   const label = viewLabel || alt || "Screen"
 
   useEffect(() => {
@@ -53,8 +55,9 @@ export function DetailImage({ alt, className = "", src, viewLabel, wide = false,
       {isOpen && createPortal(
         <div aria-label={`${label} detailed view`} aria-modal="true" className="gallery-lightbox" onClick={() => setIsOpen(false)} role="dialog">
           <figure className={`gallery-lightbox-figure${wide ? " gallery-lightbox-figure--wide" : ""}`} onClick={(event) => event.stopPropagation()}>
-            <img alt={label} src={src} />
+            <img alt={label} src={src} style={zoom.mediaStyle} {...zoom.mediaHandlers} />
             <figcaption>{label}</figcaption>
+            <LightboxZoomControls {...zoom} />
             <button aria-label="Close detailed view" autoFocus className="gallery-lightbox-close" onClick={() => setIsOpen(false)} type="button">
               <span aria-hidden="true">×</span>
             </button>

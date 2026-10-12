@@ -15,6 +15,10 @@
 .safe-footer-links span,.safe-footer-links a { display:flex; align-items:center; gap:.8333cqw; padding:0 2.0833cqw; color:inherit; font-size:1.3889cqw; line-height:1; text-decoration:none; white-space:nowrap; }
 .safe-footer-links :is(span,a) + :is(span,a) { border-left:1px solid #55535e; }
 .safe-footer-links img { display:block; max-width:none; }
+.safe-footer-links :is(a,span) { transition:color 160ms ease,transform 160ms ease; }
+.safe-footer-links img { transition:filter 160ms ease; }
+.safe-footer-links :is(a,span):hover { color:#c6b3ff; transform:translateY(-3px); }
+.safe-footer-links :is(a,span):hover img { filter:brightness(0) saturate(100%) invert(80%) sepia(13%) saturate(1009%) hue-rotate(205deg) brightness(102%) contrast(101%); }
 .safe-footer-copyright { position:absolute; right:0; bottom:0; left:0; display:grid; height:6.7361cqw; place-items:center; border-top:1px solid #27272a; color:#c2c2c2; font-size:1.1111cqw; }
 .safe-footer-projects:focus-visible,.safe-footer-contact:focus-visible,.safe-footer-links a:focus-visible { outline:max(2px,.1389cqw) solid #9a6cff; outline-offset:max(3px,.2083cqw); }
 @media (max-width:700px) {

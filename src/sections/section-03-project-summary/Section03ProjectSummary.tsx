@@ -25,28 +25,28 @@ export default function Section03ProjectSummary() {
         <h2 id="safe-introduction-title">INTRODUCTION :</h2>
         <div className="safe-summary-copy">
           <p>
-            Cabzo was designed as a modern urban mobility platform built to{" "}
+            Safe 2 Destination was designed to make everyday travel{" "}
             <br className="safe-summary-desktop-break" />
-            simplify everyday commuting. <br className="safe-summary-desktop-break" />
-            The focus of this product was to create a fast, visually clean, and{" "}
+            feel simple and secure. <br className="safe-summary-desktop-break" />
+            Riders can book trips, track their journey, and manage{" "}
             <br className="safe-summary-desktop-break" />
-            highly intuitive ride-booking experience for daily users who{" "}
+            monthly rides through a clear, reassuring app experience{" "}
             <br className="safe-summary-desktop-break" />
-            prioritize speed, convenience, and real-time visibility.
+            built around safer travel.
           </p>
 
           <p>
-            The platform was designed around the idea that booking a ride{" "}
+            The rider flow includes trip confirmation, rescheduling,{" "}
             <br className="safe-summary-desktop-break" />
-            should feel effortless — from location detection to ride{" "}
+            monthly passes, and pass renewal to keep regular{" "}
             <br className="safe-summary-desktop-break" />
-            confirmation, every interaction was optimized to reduce friction.
+            journeys easy to manage.
           </p>
 
           <p>
-            Cabzo combines a rider app, driver interface, and operational{" "}
+            A companion driver app supports availability, trip updates,{" "}
             <br className="safe-summary-desktop-break" />
-            backend into a connected mobility ecosystem.
+            monthly requests, and income tracking.
           </p>
         </div>
       </section>
